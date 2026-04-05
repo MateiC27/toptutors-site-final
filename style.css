@@ -1,0 +1,174 @@
+/* Color Palette & Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+    --bg-off-white: #FAF9F6;  /* Your logo's off-white background */
+    --text-blue: #002B49;     /* Your logo's navy blue */
+    --accent-gold: #C89D3C;   /* Your logo's gold */
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg-off-white);
+    color: var(--text-blue);
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem 5%;
+    background-color: var(--bg-off-white);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-blue);
+    margin-left: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-gold);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 4rem 5% 6rem;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+.hero-logo {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    max-width: 150px; /* Adjust this value based on your logo size */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: var(--accent-gold);
+    color: var(--text-blue);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: 700;
+    display: inline-block;
+    transition: background 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-gold:hover {
+    background-color: #b08933;
+    transform: translateY(-2px);
+}
+
+.btn-blue {
+    background-color: var(--text-blue);
+    color: var(--bg-off-white);
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-blue:hover {
+    background-color: #001f35;
+}
+
+/* Service Cards (Landing Page) */
+.services {
+    padding: 5rem 5%;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 43, 73, 0.05);
+    border-top: 4px solid var(--accent-gold);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-blue);
+}
+
+/* Inner Page Formatting */
+.page-header {
+    text-align: center;
+    padding: 4rem 5%;
+    background-color: var(--text-blue);
+    color: var(--bg-off-white);
+}
+
+.page-header h1 {
+    color: var(--accent-gold);
+    font-size: 3rem;
+}
+
+.page-content {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 5%;
+}
+
+.page-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.page-content li {
+    margin-bottom: 0.8rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--text-blue);
+    color: var(--bg-off-white);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
